@@ -1,0 +1,21 @@
+﻿@media screen and (min-width: 65rem) {
+    header {
+        padding: 1.5rem 2rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    .gallery {
+        gap: 1.5rem;
+    }
+
+    figure {
+        padding: 1.25rem;
+    }
+
+    figure img {
+        height: 220px;
+    }
+}
