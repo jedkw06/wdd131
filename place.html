@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cape Town, South Africa | My Country and Home</title>
+    <meta name="description" content="A Cape Town webpage featuring South Africa, local highlights, and a weather section with wind chill.">
+    <meta name="author" content="Jed van Eeden">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="site-title-row">
+            <h1>Cape Town, South Africa</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="temples.html">Temples</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="hero-bg">
+            <picture>
+                <source srcset="images/cape-town-hero-image.webp 1440w, images/cape-town-hero-image.webp 960w, images/cape-town-hero-mobile.webp 480w" sizes="100vw" type="image/webp">
+                <img src="images/cape-town-hero-image.webp" alt="Cape Town, Table Mountain and ocean in the background" class="hero-img-bg">
+            </picture>
+            <div class="overlay-blocks">
+                <div class="data-block">
+                    <div class="block-title">Data</div>
+                    <ul>
+                        <li><strong>Country:</strong> South Africa</li>
+                        <li><strong>Area:</strong> 1,221,037 sq km</li>
+                        <li><strong>Population:</strong> 62,000,000</li>
+                        <li><strong>Capital:</strong> Cape Town</li>
+                        <li><strong>Official Languages:</strong> 11 official languages</li>
+                        <li><strong>Currency:</strong> South African Rand (ZAR)</li>
+                        <li><strong>Time Zone:</strong> UTC+2</li>
+                        <li><strong>Calling Code:</strong> +27</li>
+                        <li><strong>Internet TLD:</strong> .za</li>
+                    </ul>
+                </div>
+                <div class="weather-block">
+                    <div class="block-title">Weather <img class="weather-icon-mobile" src="images/weather-cloud.svg" alt="Cloud weather icon"></div>
+                    <ul>
+                        <li><strong>Temperature:</strong> <span id="temperature">12°C</span></li>
+                        <li><strong>Conditions:</strong> Cloudy</li>
+                        <li><strong>Wind:</strong> 18 km/h</li>
+                        <li><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Jed van Eeden. Cape Town, South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
