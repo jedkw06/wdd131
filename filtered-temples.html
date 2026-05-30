@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album - Filtered</title>
+    <meta name="description" content="Filtered Temple Album gallery for WDD 131 course. Dynamic temple cards with filtering options.">
+    <meta name="author" content="Jed van Eeden">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 65rem)">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <p class="site-title">Temple Album</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="place.html">Cape Town</a>
+            <a href="#" class="nav-link" data-filter="home">Home</a>
+            <a href="#" class="nav-link" data-filter="old">Old</a>
+            <a href="#" class="nav-link" data-filter="new">New</a>
+            <a href="#" class="nav-link" data-filter="large">Large</a>
+            <a href="#" class="nav-link" data-filter="small">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Temple Album Gallery</h1>
+        <section class="gallery" id="gallery">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Jed van Eeden. South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
