@@ -242,7 +242,7 @@ main {
     border-radius: 4px;
 }
 
-.scenario h4 {
+.scenario h3 {
     color: var(--accent-crimson);
     margin-bottom: 0.5rem;
 }
@@ -310,7 +310,7 @@ main {
     background-color: var(--sepia-brown);
 }
 
-.color-item h4 {
+.color-item h3 {
     color: var(--accent-gold);
     margin-bottom: 0.5rem;
 }
