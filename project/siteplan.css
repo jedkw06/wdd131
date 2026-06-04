@@ -1,0 +1,689 @@
+/* ============================================
+   ROUNDTABLE HOLD - SITEPLAN STYLESHEET
+   Color Scheme: Sepia Brown, Charcoal Gray, Weathered Stone, Soft Golden Light, Deep Crimson
+   Typography: Georgia (headings), Trebuchet (body)
+   ============================================ */
+
+/* ==================== VARIABLES & GENERAL STYLES ==================== */
+
+:root {
+    --primary-dark: #2A2A2A;
+    --accent-gold: #C9A876;
+    --accent-crimson: #8B3A3A;
+    --secondary-stone: #9C9591;
+    --sepia-brown: #5C4A3D;
+    --text-light: #E8DCC8;
+    --text-dark: #1a1a1a;
+    --border-color: #5C4A3D;
+    --light-bg: #D9CFC1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* ==================== HEADER STYLES ==================== */
+
+header {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--sepia-brown) 100%);
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 3px solid var(--accent-gold);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.logo {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    max-width: 90px;
+    max-height: 90px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.logo-display img {
+    max-width: 50px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+    color: var(--accent-gold);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.tagline {
+    font-style: italic;
+    color: var(--text-light);
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* ==================== NAVIGATION STYLES ==================== */
+
+nav {
+    background-color: var(--sepia-brown);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    color: var(--primary-dark);
+    background-color: var(--accent-gold);
+    text-shadow: none;
+}
+
+/* ==================== MAIN CONTENT STYLES ==================== */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.section {
+    background-color: var(--secondary-stone);
+    border-left: 5px solid var(--accent-gold);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.section h2 {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    color: var(--accent-gold);
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.section h3 {
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    color: var(--accent-gold);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.section h4 {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.content-box {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+
+.section p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.section ul, .section ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section li {
+    margin-bottom: 0.5rem;
+}
+
+/* ==================== SITE NAME SECTION ==================== */
+
+.logo-display {
+    background-color: rgba(139, 58, 58, 0.1);
+    padding: 1.5rem;
+    border-left: 4px solid var(--accent-crimson);
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.logo-display p {
+    margin-bottom: 0.5rem;
+}
+
+/* ==================== SITE PURPOSE SECTION ==================== */
+
+.purpose-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.purpose-list li {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-left: 4px solid var(--accent-gold);
+    border-radius: 2px;
+}
+
+.purpose-list strong {
+    color: var(--accent-gold);
+}
+
+/* ==================== SCENARIOS SECTION ==================== */
+
+.scenario {
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-left: 4px solid var(--accent-crimson);
+    border-radius: 4px;
+}
+
+.scenario h4 {
+    color: var(--accent-crimson);
+    margin-bottom: 0.5rem;
+}
+
+.scenario em {
+    color: var(--text-light);
+    font-style: italic;
+    display: block;
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid var(--accent-crimson);
+}
+
+.scenario p:last-child {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(139, 58, 58, 0.3);
+}
+
+/* ==================== COLOR SCHEMA SECTION ==================== */
+
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.color-item {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.color-box {
+    width: 100%;
+    height: 100px;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    border: 2px solid rgba(201, 168, 118, 0.5);
+}
+
+.primary-color {
+    background-color: var(--primary-dark);
+}
+
+.accent-color {
+    background-color: var(--accent-gold);
+}
+
+.secondary-color {
+    background-color: var(--secondary-stone);
+}
+
+.text-light {
+    background-color: var(--text-light);
+}
+
+.accent-crimson {
+    background-color: var(--accent-crimson);
+}
+
+.sepia-brown {
+    background-color: var(--sepia-brown);
+}
+
+.color-item h4 {
+    color: var(--accent-gold);
+    margin-bottom: 0.5rem;
+}
+
+.color-usage {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.accent-text {
+    color: var(--accent-gold);
+    font-weight: bold;
+}
+
+.primary-text {
+    color: var(--primary-dark);
+    font-weight: bold;
+}
+
+.secondary-text {
+    color: var(--secondary-stone);
+    font-weight: bold;
+}
+
+/* ==================== TYPOGRAPHY SECTION ==================== */
+
+.typography-display {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.font-example {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    border-radius: 4px;
+    border-left: 4px solid var(--accent-gold);
+}
+
+.font-heading {
+    font-family: Georgia, serif;
+    font-size: 1.8rem;
+    color: var(--accent-gold);
+    margin-bottom: 1rem;
+}
+
+.font-secondary {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: var(--accent-gold);
+    margin-bottom: 1rem;
+}
+
+.font-accent {
+    font-family: 'Courier New', monospace;
+    font-size: 1.5rem;
+    color: var(--accent-crimson);
+    margin-bottom: 1rem;
+}
+
+.font-sample-heading {
+    font-family: Georgia, serif;
+    font-size: 1.8rem;
+    color: var(--accent-gold);
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: rgba(201, 168, 118, 0.1);
+    border-radius: 4px;
+}
+
+.font-sample-body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 1rem;
+    color: var(--text-light);
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.font-sample-accent {
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    color: var(--accent-crimson);
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+}
+
+.typography-hierarchy {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.typography-hierarchy ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.typography-hierarchy li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(201, 168, 118, 0.2);
+}
+
+.typography-hierarchy li:last-child {
+    border-bottom: none;
+}
+
+/* ==================== WIREFRAMES SECTION ==================== */
+
+.wireframes-section {
+    margin-bottom: 2rem;
+}
+
+.wireframe-container {
+    margin-bottom: 2rem;
+}
+
+.wireframe-container h3 {
+    color: var(--accent-gold);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.wireframe {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px dashed var(--accent-gold);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Mobile Wireframe */
+.mobile-wireframe {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.mobile-wireframe .wf-header,
+.mobile-wireframe .wf-nav,
+.mobile-wireframe .wf-hero,
+.mobile-wireframe .wf-content,
+.mobile-wireframe .wf-sidebar,
+.mobile-wireframe .wf-footer {
+    padding: 1rem;
+    border-bottom: 1px dashed var(--accent-gold);
+    text-align: center;
+    font-weight: bold;
+    color: var(--accent-gold);
+    background-color: rgba(201, 168, 118, 0.05);
+}
+
+.mobile-wireframe .wf-section {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0.8rem;
+    margin: 0.5rem;
+    border: 1px solid var(--accent-gold);
+    border-radius: 2px;
+    text-align: center;
+    color: var(--text-light);
+}
+
+/* Desktop Wireframe */
+.desktop-wireframe {
+    display: flex;
+    flex-direction: column;
+}
+
+.wf-header-desktop,
+.wf-hero-desktop,
+.wf-footer-desktop {
+    padding: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--accent-gold);
+    background-color: rgba(201, 168, 118, 0.05);
+    border-bottom: 1px dashed var(--accent-gold);
+}
+
+.wf-main-desktop {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.wf-content-desktop,
+.wf-sidebar-desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.wf-section {
+    background-color: rgba(201, 168, 118, 0.1);
+    padding: 1.5rem;
+    border: 2px solid var(--accent-gold);
+    border-radius: 4px;
+    text-align: center;
+    color: var(--accent-gold);
+    font-weight: bold;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==================== FOOTER STYLES ==================== */
+
+footer {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--sepia-brown) 100%);
+    border-top: 3px solid var(--accent-gold);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.footer-nav a {
+    color: var(--accent-gold);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+    color: var(--text-light);
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        gap: 0.5rem;
+    }
+
+    nav a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .section {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section h2 {
+        font-size: 1.6rem;
+    }
+
+    .section h3 {
+        font-size: 1.3rem;
+    }
+
+    .color-palette {
+        grid-template-columns: 1fr;
+    }
+
+    .wf-main-desktop {
+        grid-template-columns: 1fr;
+    }
+
+    .desktop-wireframe {
+        display: none;
+    }
+
+    .wireframe-container:nth-child(2) {
+        display: none;
+    }
+
+    .wireframe-container:nth-child(1) h3 {
+        display: none;
+    }
+
+    .mobile-wireframe {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 1rem;
+        border-left-width: 3px;
+    }
+
+    .section h2 {
+        font-size: 1.3rem;
+    }
+
+    .section h3 {
+        font-size: 1.1rem;
+    }
+
+    nav a {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* ==================== PRINT STYLES ==================== */
+
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    nav, footer {
+        display: none;
+    }
+
+    .section {
+        background-color: white;
+        color: black;
+        border: 1px solid #ccc;
+        page-break-inside: avoid;
+    }
+
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+}
