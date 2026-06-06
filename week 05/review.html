@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <meta name="description" content="Product review confirmation page for WDD 131 assignment.">
+    <meta name="author" content="Jed van Eeden">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/form.css">
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="../scripts/review.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="course-title">WDD 131 – Product Review</span>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="form.html">Review Form</a>
+        </nav>
+    </header>
+    <main>
+        <section class="review-card">
+            <h1>Thank you for your review</h1>
+            <p class="review-message">We are processing your review details now.</p>
+            <div class="review-summary" aria-live="polite"></div>
+            <div class="review-count">
+                <strong>Total completed reviews:</strong> <span id="reviewCount">0</span>
+            </div>
+            <a class="button secondary" href="form.html">Submit another review</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Jed van Eeden. South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

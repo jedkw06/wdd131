@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Responsive product review form for WDD 131 assignment.">
+    <meta name="author" content="Jed van Eeden">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/form.css">
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="../scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="course-title">WDD 131 – Product Review</span>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="review.html">Confirmation</a>
+        </nav>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <h1>Product Review</h1>
+            <p>Share your experience, choose the product, and submit your review. Required fields are marked with an asterisk.</p>
+
+            <div class="form-group">
+                <label for="productName">Product: *</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+
+            <fieldset class="fieldset-group">
+                <legend>Overall Rating: *</legend>
+                <div class="rating-row">
+                    <div>
+                        <input class="rating-input" type="radio" id="rating1" name="rating" value="1" required aria-label="1 star">
+                        <label class="rating-label" for="rating1" title="1 star">☆</label>
+                    </div>
+                    <div>
+                        <input class="rating-input" type="radio" id="rating2" name="rating" value="2" required aria-label="2 stars">
+                        <label class="rating-label" for="rating2" title="2 stars">☆☆</label>
+                    </div>
+                    <div>
+                        <input class="rating-input" type="radio" id="rating3" name="rating" value="3" required aria-label="3 stars">
+                        <label class="rating-label" for="rating3" title="3 stars">☆☆☆</label>
+                    </div>
+                    <div>
+                        <input class="rating-input" type="radio" id="rating4" name="rating" value="4" required aria-label="4 stars">
+                        <label class="rating-label" for="rating4" title="4 stars">☆☆☆☆</label>
+                    </div>
+                    <div>
+                        <input class="rating-input" type="radio" id="rating5" name="rating" value="5" required aria-label="5 stars">
+                        <label class="rating-label" for="rating5" title="5 stars">☆☆☆☆☆</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="installationDate">Date of Installation: *</label>
+                <input type="date" id="installationDate" name="installationDate" required>
+            </div>
+
+            <fieldset class="fieldset-group">
+                <legend>Which features did you find useful? <span>(Check all that apply)</span></legend>
+                <div class="feature-list">
+                    <label class="feature-item" for="featureDurability">
+                        <input type="checkbox" id="featureDurability" name="usefulFeatures" value="Durability">
+                        Durability
+                    </label>
+                    <label class="feature-item" for="featureEaseOfUse">
+                        <input type="checkbox" id="featureEaseOfUse" name="usefulFeatures" value="Ease of Use">
+                        Ease of Use
+                    </label>
+                    <label class="feature-item" for="featurePerformance">
+                        <input type="checkbox" id="featurePerformance" name="usefulFeatures" value="Performance">
+                        Performance
+                    </label>
+                    <label class="feature-item" for="featureDesign">
+                        <input type="checkbox" id="featureDesign" name="usefulFeatures" value="Design">
+                        Design
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="writtenReview">Written Review:</label>
+                <textarea id="writtenReview" name="writtenReview" placeholder="Write your review here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="userName">Your Name:</label>
+                <input type="text" id="userName" name="userName" placeholder="Optional">
+            </div>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Jed van Eeden. South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
