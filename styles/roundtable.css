@@ -1,0 +1,341 @@
+/* ============================================
+   ROUNDTABLE.CSS - Main Hub Page Styles
+   ============================================ */
+
+:root {
+    --primary-color: #8b7355;
+    --secondary-color: #d4af37;
+    --accent-color: #4a4a4a;
+    --text-light: #e8e8e8;
+    --text-dark: #1a1a1a;
+    --bg-dark: #0f0f0f;
+    --gold-accent: #c9aa5b;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* OVERVIEW SECTION */
+.overview-section {
+    background: linear-gradient(135deg, rgba(139, 115, 85, 0.1), rgba(212, 175, 55, 0.05));
+    border-left: 4px solid var(--gold-accent);
+    padding: 3rem 2rem;
+    margin: 2rem 0;
+}
+
+.overview-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+}
+
+/* INFO CARDS */
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.info-card {
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid var(--gold-accent);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    background: rgba(0, 0, 0, 0.6);
+    border-color: var(--secondary-color);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.2);
+}
+
+.info-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.info-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* FEATURED NPCs SECTION */
+.featured-npcs-section {
+    margin: 3rem 0;
+}
+
+.featured-npcs-section h2 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.npc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.npc-card {
+    background: linear-gradient(135deg, rgba(75, 74, 74, 0.5), rgba(50, 50, 50, 0.5));
+    border: 2px solid var(--gold-accent);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+}
+
+.npc-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--secondary-color);
+    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.3);
+    background: linear-gradient(135deg, rgba(139, 115, 85, 0.3), rgba(75, 74, 74, 0.5));
+}
+
+.npc-image {
+    height: 200px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid var(--gold-accent);
+}
+
+.image-placeholder {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.npc-card h3 {
+    color: var(--secondary-color);
+    margin: 1.5rem 1.5rem 0.5rem;
+    font-size: 1.3rem;
+}
+
+.npc-title {
+    color: var(--gold-accent);
+    font-style: italic;
+    font-size: 0.9rem;
+    margin: 0 1.5rem;
+    display: block;
+}
+
+.npc-description {
+    color: var(--text-light);
+    margin: 1rem 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.view-profile {
+    display: inline-block;
+    margin: 0 1.5rem 1.5rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.view-profile:hover {
+    color: var(--gold-accent);
+    text-decoration: underline;
+}
+
+/* SERVICES SECTION */
+.services-section {
+    margin: 3rem 0;
+}
+
+.services-section h2 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-item {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--gold-accent);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.service-item:hover {
+    background: rgba(0, 0, 0, 0.6);
+    border-color: var(--secondary-color);
+    transform: translateY(-5px);
+}
+
+.service-item h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.service-item p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-list li {
+    color: var(--gold-accent);
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.service-list li::before {
+    content: "⚜";
+    position: absolute;
+    left: 0;
+    color: var(--gold-accent);
+}
+
+/* QUICK FACTS */
+.quick-facts-section {
+    background: rgba(139, 115, 85, 0.1);
+    border: 2px solid var(--gold-accent);
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 3rem 0;
+}
+
+.quick-facts-section h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.fact {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    border-left: 3px solid var(--gold-accent);
+    border-radius: 4px;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.fact strong {
+    color: var(--secondary-color);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* CTA SECTION */
+.cta-section {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(139, 115, 85, 0.1));
+    border: 2px solid var(--gold-accent);
+    border-radius: 8px;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.cta-section h2 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background: var(--gold-accent);
+    color: var(--text-dark);
+    border-color: var(--gold-accent);
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--gold-accent);
+    border-color: var(--gold-accent);
+}
+
+.btn-secondary:hover {
+    background: var(--gold-accent);
+    color: var(--text-dark);
+    transform: scale(1.05);
+}
+
+.section-cta {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .overview-section,
+    .featured-npcs-section,
+    .services-section {
+        padding: 1.5rem;
+    }
+
+    .npc-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+}

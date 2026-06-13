@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NPCs at Roundtable Hold. Learn about their roles and services.">
+    <meta name="author" content="Jed van Eeden | WDD 131">
+    <title>NPCs - Roundtable Hold</title>
+    <link rel="icon" type="image/jpeg" href="project-images/roundtable-logo.jpg">
+    <link rel="stylesheet" href="../styles/npcs.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">
+                    <img src="project-images/roundtable-logo.jpg" alt="Roundtable Hold Logo">
+                </div>
+                <div class="header-text">
+                    <h1>Roundtable Hold NPCs</h1>
+                    <p class="tagline">Meet the Tarnished and Companions</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="roundtable.html">← Back to Hub</a></li>
+            <li><a href="#npc-list">NPCs</a></li>
+            <li><a href="#npc-filter">Filter</a></li>
+            <li><a href="access-guide.html">How to Access</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <!-- FILTER SECTION -->
+        <section id="npc-filter" class="filter-section">
+            <h2>Filter NPCs</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="merchant">Merchants</button>
+                <button class="filter-btn" data-filter="warrior">Warriors</button>
+                <button class="filter-btn" data-filter="specialist">Specialists</button>
+                <button class="filter-btn" data-filter="visitor">Visitors</button>
+            </div>
+        </section>
+
+        <!-- NPC LIST SECTION -->
+        <section id="npc-list" class="npc-list-section">
+            <div class="npc-list-grid">
+
+                <!-- Gideon Ofnir -->
+                <article class="npc-profile" id="gideon" data-category="warrior">
+                    <div class="npc-header">
+                        <h3 class="npc-name">Gideon Ofnir</h3>
+                        <span class="npc-title">The All-Knowing</span>
+                        <span class="npc-role">Leader & Counselor</span>
+                    </div>
+                    <div class="npc-body">
+                        <p class="npc-description">
+                            The senior member and leader of the Roundtable Hold. Gideon is described as the All-Knowing, 
+                            a warrior of immense wisdom and knowledge about the Shardbearers.
+                        </p>
+                        <div class="npc-details">
+                            <h4>Services:</h4>
+                            <ul>
+                                <li>Provides information about Shard Bearers and their locations</li>
+                                <li>Offers strategic counsel and guidance</li>
+                                <li>Shares lore and secrets of the Lands Between</li>
+                            </ul>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Location:</h4>
+                            <p>Sitting room - his private chamber at the Roundtable Hold</p>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Note:</h4>
+                            <p>Becoming Elden Lord is his ultimate goal and he will "support" your journey. Until he doesn't...</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Smithing Master Hewg -->
+                <article class="npc-profile" id="hewg" data-category="specialist">
+                    <div class="npc-header">
+                        <h3 class="npc-name">Smithing Master Hewg</h3>
+                        <span class="npc-title">Blacksmith & Craftsman</span>
+                        <span class="npc-role">Weapon Upgrades</span>
+                    </div>
+                    <div class="npc-body">
+                        <p class="npc-description">
+                            A master blacksmith dedicated to his craft. Hewg is bound to the Roundtable Hold by circumstances 
+                            unknown to him, yet he remains committed to enhancing warriors' armaments.
+                        </p>
+                        <div class="npc-details">
+                            <h4>Services:</h4>
+                            <ul>
+                                <li>Weapon upgrading (standard weapons up to +25 and unique weapons to +10)</li>
+                                <li>Special weapon enhancement</li>
+                                <li>Affinity adjustment</li>
+                                <li>Requires: Smithing Stones & Somber Smithing Stones</li>
+                            </ul>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Location:</h4>
+                            <p>Forge chamber - equipped with anvil and equipment</p>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Special Note:</h4>
+                            <p>Hewg's dialogue hints at a mysterious past and purpose within the Hold.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Twin Maiden Husks -->
+                <article class="npc-profile" id="twin-maidens" data-category="merchant">
+                    <div class="npc-header">
+                        <h3 class="npc-name">Twin Maiden Husks</h3>
+                        <span class="npc-title">Merchant Vendors</span>
+                        <span class="npc-role">General & Specialty Goods</span>
+                    </div>
+                    <div class="npc-body">
+                        <p class="npc-description">
+                            Enigmatic merchant NPCs who manage the Roundtable's shop. They accept Bell Bearings to expand 
+                            their inventory and offer a wide variety of goods.
+                        </p>
+                        <div class="npc-details">
+                            <h4>Services:</h4>
+                            <ul>
+                                <li>Crafting materials and upgrade components</li>
+                                <li>Consumables and restorative items</li>
+                                <li>Armor and weapons (with Bell Bearings)</li>
+                                <li>Ammunition and tools</li>
+                            </ul>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Location:</h4>
+                            <p>Shop chamber - main trading area</p>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Bell Bearing System:</h4>
+                            <p>Bring them Bell Bearings found throughout the Lands Between to unlock new inventory items.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Roderika -->
+                <article class="npc-profile" id="roderika" data-category="specialist">
+                    <div class="npc-header">
+                        <h3 class="npc-name">Roderika</h3>
+                        <span class="npc-title">Spirit Tuner</span>
+                        <span class="npc-role">Spirit Ash Enhancement</span>
+                    </div>
+                    <div class="npc-body">
+                        <p class="npc-description">
+                            Once a wanderer at Stormhill Shack, Roderika has found her purpose as a Spirit Tuner at the Roundtable. 
+                            She enhances and attunes Spirit Ashes for warriors.
+                        </p>
+                        <div class="npc-details">
+                            <h4>Services:</h4>
+                            <ul>
+                                <li>Spirit Ash enhancement and leveling</li>
+                                <li>Spirit Ash information and guidance</li>
+                                <li>Compatibility advice</li>
+                            </ul>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Location:</h4>
+                            <p>Spirit Ash chamber - with enhancement tools</p>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Quest Connection:</h4>
+                            <p>Part of a larger questline involving her journey to find purpose.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Brother Corhyn -->
+                <article class="npc-profile" id="corhyn" data-category="merchant">
+                    <div class="npc-header">
+                        <h3 class="npc-name">Brother Corhyn</h3>
+                        <span class="npc-title">Holy Cleric</span>
+                        <span class="npc-role">Incantation Merchant</span>
+                    </div>
+                    <div class="npc-body">
+                        <p class="npc-description">
+                            A devoted cleric of the Golden Order who sells sacred incantations. 
+                            He shares knowledge of holy magic and faith-based powers.
+                        </p>
+                        <div class="npc-details">
+                            <h4>Services:</h4>
+                            <ul>
+                                <li>Incantation spells - holy and sacred magic</li>
+                                <li>Sacred seal recommendations</li>
+                                <li>Faith-based guidance</li>
+                            </ul>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Location:</h4>
+                            <p>Prayer chamber - dedicated to holy contemplation</p>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Note:</h4>
+                            <p>Leave if his questline progresses elsewhere in the world.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Sorcerer Rogier -->
+                <article class="npc-profile" id="rogier" data-category="warrior">
+                    <div class="npc-header">
+                        <h3 class="npc-name">Sorcerer Rogier</h3>
+                        <span class="npc-title">Spellcaster</span>
+                        <span class="npc-role">Sorcery Practitioner</span>
+                    </div>
+                    <div class="npc-body">
+                        <p class="npc-description">
+                            A talented Tarnished sorcerer first encountered at Stormveil Castle. He practices advanced sorcery 
+                            and serves as a fellow warrior within the Hold.
+                        </p>
+                        <div class="npc-details">
+                            <h4>Services:</h4>
+                            <ul>
+                                <li>Sorcery spells and knowledge</li>
+                                <li>Magical theory discussion</li>
+                                <li>Quest assistance</li>
+                            </ul>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Location:</h4>
+                            <p>Study area - researching sorcery</p>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Character Arc:</h4>
+                            <p>His questline has significant story implications related to the Dead.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Nepheli Loux -->
+                <article class="npc-profile" id="nepheli" data-category="warrior">
+                    <div class="npc-header">
+                        <h3 class="npc-name">Nepheli Loux</h3>
+                        <span class="npc-title">Warrior</span>
+                        <span class="npc-role">Tarnished Companion</span>
+                    </div>
+                    <div class="npc-body">
+                        <p class="npc-description">
+                            A skilled Tarnished warrior first met at Stormveil Castle. She seeks to become Elden Lord 
+                            and values honesty and strength in her allies.
+                        </p>
+                        <div class="npc-details">
+                            <h4>Services:</h4>
+                            <ul>
+                                <li>Summon for certain boss fights</li>
+                                <li>Quest assistance</li>
+                                <li>Warrior companionship and support</li>
+                            </ul>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Location:</h4>
+                            <p>Common area - resting or preparing for battle</p>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Character Development:</h4>
+                            <p>Her questline explores themes of legacy and inheritance.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- D, Hunter of the Dead -->
+                <article class="npc-profile" id="d-hunter" data-category="warrior">
+                    <div class="npc-header">
+                        <h3 class="npc-name">D, Hunter of the Dead</h3>
+                        <span class="npc-title">Undead Hunter</span>
+                        <span class="npc-role">Guide & Protector</span>
+                    </div>
+                    <div class="npc-body">
+                        <p class="npc-description">
+                            A mysterious hunter dedicated to eliminating undead abominations. He offers cryptic guidance 
+                            about the Dead and those who practice death magic.
+                        </p>
+                        <div class="npc-details">
+                            <h4>Services:</h4>
+                            <ul>
+                                <li>Information about Gurranq, Beast Clergyman</li>
+                                <li>Deathroot usage explanation</li>
+                                <li>Dead-related quest guidance</li>
+                            </ul>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Location:</h4>
+                            <p>Main chamber or standing watch</p>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Quest Hook:</h4>
+                            <p>His storyline involves a journey to the Bestial Sanctum.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Fia -->
+                <article class="npc-profile" id="fia" data-category="visitor">
+                    <div class="npc-header">
+                        <h3 class="npc-name">Fia</h3>
+                        <span class="npc-title">Deathbed Companion</span>
+                        <span class="npc-role">Blessings & Support</span>
+                    </div>
+                    <div class="npc-body">
+                        <p class="npc-description">
+                            A mysterious woman who offers companionship to the Tarnished. She provides unique blessings 
+                            and represents the theme of mortality and embrace.
+                        </p>
+                        <div class="npc-details">
+                            <h4>Services:</h4>
+                            <ul>
+                                <li>Offers an embrace (gives temporary debuff or blessing)</li>
+                                <li>Baldachin's Blessing - converts debuff to buff</li>
+                                <li>Death blight sorcery</li>
+                            </ul>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Location:</h4>
+                            <p>Bedroom chamber - resting area</p>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Lore Connection:</h4>
+                            <p>Her character explores themes of death, dying, and the nature of Destined Death.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Enia -->
+                <article class="npc-profile" id="enia" data-category="merchant">
+                    <div class="npc-header">
+                        <h3 class="npc-name">Enia</h3>
+                        <span class="npc-title">Finger Reader</span>
+                        <span class="npc-role">Great Rune Exchanging</span>
+                    </div>
+                    <div class="npc-body">
+                        <p class="npc-description">
+                            A Finger Reader who becomes available after defeating your first demigod. 
+                            She facilitates the exchange of Great Runes for valuable items and access.
+                        </p>
+                        <div class="npc-details">
+                            <h4>Services:</h4>
+                            <ul>
+                                <li>Exchanges Great Runes for items</li>
+                                <li>Late-game content access</li>
+                                <li>Boss reward trading</li>
+                            </ul>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Location:</h4>
+                            <p>Chamber of the Two Fingers - sacred space</p>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Requirement:</h4>
+                            <p>Available only after defeating at least one Demigod and obtaining a Great Rune.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Diallos -->
+                <article class="npc-profile" id="diallos" data-category="visitor">
+                    <div class="npc-header">
+                        <h3 class="npc-name">Diallos</h3>
+                        <span class="npc-title">Noble</span>
+                        <span class="npc-role">Questgiver</span>
+                    </div>
+                    <div class="npc-body">
+                        <p class="npc-description">
+                            A well-dressed noble seeking a loyal servant. He has his own questline involving loyalty 
+                            and ambition within the world of Elden Ring.
+                        </p>
+                        <div class="npc-details">
+                            <h4>Services:</h4>
+                            <ul>
+                                <li>Quest initiation</li>
+                                <li>Companion recruitment opportunities</li>
+                                <li>Story progression</li>
+                            </ul>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Location:</h4>
+                            <p>Common areas or private chambers</p>
+                        </div>
+                        <div class="npc-details">
+                            <h4>Character Note:</h4>
+                            <p>His quest involves seeking a loyal servant and has connections to other characters.</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SECTION: ENSHA & MAD TONGUE -->
+        <section class="npc-special-section">
+            <h2>Notable Encounters</h2>
+            <div class="special-npc-grid">
+                <div class="special-npc-card">
+                    <h3>Ensha</h3>
+                    <p class="npc-title">Silent Guardian</p>
+                    <p>A silent NPC standing outside Gideon Ofnir's room. In late-game, he may become hostile. 
+                    He holds items of significance to certain characters.</p>
+                </div>
+                <div class="special-npc-card">
+                    <h3>Mad Tongue Alberich</h3>
+                    <p class="npc-title">Invader</p>
+                    <p>A challenging invader encountered in the lower section of the Roundtable Hold. 
+                    Defeating him grants the Taunter's Tongue and Reverential Bow gesture.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta-section">
+            <h2>Ready to Meet the Tarnished?</h2>
+            <div class="cta-buttons">
+                <a href="roundtable.html" class="btn btn-primary">Return to Hub</a>
+                <a href="access-guide.html" class="btn btn-secondary">How to Access</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Roundtable Hold - A Fictional Elden Ring Hub | Jed van Eeden | WDD 131</p>
+            <p>Information sourced from Elden Ring Wiki</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/npcs.js"></script>
+</body>
+</html>

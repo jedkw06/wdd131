@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Roundtable Hold - Hub for Tarnished in Elden Ring.">
+    <meta name="author" content="Jed van Eeden | WDD 131">
+    <title>Roundtable Hold</title>
+    <link rel="icon" type="image/jpeg" href="project-images/roundtable-logo.jpg">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="project-images/roundtable-logo.jpg" alt="Roundtable Hold Logo" class="logo" loading="lazy">
+            <div>
+                <h1>Roundtable Hold</h1>
+                <p class="tagline">Hub for Tarnished</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#npcs">NPCs</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="npcs.html">All NPCs</a></li>
+            <li><a href="access-guide.html">Access Guide</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="overview" class="section">
+            <div class="container">
+                <h2>Welcome to the Roundtable Hold</h2>
+                <p>The Roundtable Hold is a sanctuary outside the Lands Between. It serves as the primary hub for Tarnished in the game Elden Ring. Combat is prohibited here.</p>
+                
+                <div class="cards">
+                    <article class="card">
+                        <h3>Equipement Upgrades</h3>
+                        <p>Blacksmith Hewg enhances your Weapons up to +25 or +10. Roderika can upgrade Spirit Ashes to +10.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Npcs</h3>
+                        <p>Twin Maiden Husks offer a wide range of general goods, their inventory can be expanded through collecting Bell Bearings. Other merchants sell more targeted items for certain classes</p>
+                    </article>
+                    <article class="card">
+                        <h3>Knowledge</h3>
+                        <p>Gideon Ofnir provides information about Shardbearers/Demi-Gods and their locations.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="npcs" class="section alternate">
+            <div class="container">
+                <h2>Featured NPCs</h2>
+                <div class="npc-list" id="npcContainer"></div>
+                <div class="cta">
+                    <a href="npcs.html" class="btn btn-primary">View All NPCs</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Available Services</h2>
+                <div class="services">
+                    <article class="service">
+                        <h3>Equipment Upgrades</h3>
+                        <p>Upgrade weapons with Smithing and Somber Smithing Stones and ashes with Ghost AND Grave glovewarts</p>
+                    </article>
+                    <article class="service">
+                        <h3>Merchant Trading</h3>
+                        <p>Purchase materials, consumables, and rare armor with expandable inventory.</p>
+                    </article>
+                    <article class="service">
+                        <h3>Questlines</h3>
+                        <p>Discover the lore and backstories of characters, and following them as they continue their journey. But be ready for tragedy.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section alternate">
+            <div class="container">
+                <h2>Join Our Scroll Mailing Service!</h2>
+                <form id="newsletterForm" class="form-container" novalidate>
+                    <fieldset>
+                        <legend>Subscribe for Updates</legend>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Interest:</label>
+                            <select id="interest" name="interest">
+                                <option value="">-- Select --</option>
+                                <option value="npcs">NPC Stories</option>
+                                <option value="weapons">Equipment Upgrades</option>
+                                <option value="lore">Bartering</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </fieldset>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Roundtable Hold | Jed van Eeden | WDD 131</p>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

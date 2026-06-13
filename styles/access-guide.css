@@ -1,0 +1,488 @@
+/* ============================================
+   ACCESS-GUIDE.CSS - Access Guide Page Styles
+   ============================================ */
+
+:root {
+    --primary-color: #8b7355;
+    --secondary-color: #d4af37;
+    --accent-color: #4a4a4a;
+    --text-light: #e8e8e8;
+    --text-dark: #1a1a1a;
+    --bg-dark: #0f0f0f;
+    --gold-accent: #c9aa5b;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* INTRO SECTION */
+.intro-section {
+    background: linear-gradient(135deg, rgba(139, 115, 85, 0.1), rgba(212, 175, 55, 0.05));
+    border-left: 4px solid var(--gold-accent);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.intro-section h2 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.intro-section p {
+    color: var(--text-light);
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+/* REQUIREMENTS SECTION */
+.requirements-section {
+    margin: 3rem 0;
+}
+
+.requirements-section h2 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.requirements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.requirement-card {
+    background: linear-gradient(135deg, rgba(75, 74, 74, 0.5), rgba(50, 50, 50, 0.5));
+    border: 2px solid var(--gold-accent);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.requirement-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--secondary-color);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+}
+
+.requirement-card h3 {
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.requirement-card p {
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* METHODS SECTION */
+.methods-section {
+    margin: 3rem 0;
+}
+
+.methods-section h2 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.access-method {
+    background: linear-gradient(135deg, rgba(75, 74, 74, 0.5), rgba(50, 50, 50, 0.5));
+    border: 2px solid var(--gold-accent);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.access-method:hover {
+    border-color: var(--secondary-color);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+}
+
+.method-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    padding: 1.5rem;
+    border-bottom: 2px solid var(--gold-accent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.method-header h3 {
+    color: var(--secondary-color);
+    margin: 0;
+    flex: 1;
+    min-width: 300px;
+}
+
+.method-difficulty {
+    background: rgba(212, 175, 55, 0.2);
+    color: var(--gold-accent);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.method-content {
+    padding: 2rem;
+}
+
+.method-description {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.method-steps {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    border-left: 3px solid var(--gold-accent);
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+
+.method-steps h4 {
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.method-steps ol {
+    margin: 0;
+    padding-left: 1.5rem;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.method-steps li {
+    margin-bottom: 0.75rem;
+}
+
+.method-steps strong {
+    color: var(--gold-accent);
+}
+
+.method-details,
+.method-note {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.method-details h4,
+.method-note strong {
+    color: var(--secondary-color);
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.method-details p {
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.method-note {
+    border-left: 3px solid var(--secondary-color);
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* AFTER SECTION */
+.after-section {
+    background: rgba(139, 115, 85, 0.1);
+    border: 2px solid var(--gold-accent);
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 3rem 0;
+}
+
+.after-section h2 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--gold-accent);
+    padding-bottom: 1rem;
+}
+
+.after-section h3 {
+    color: var(--gold-accent);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.after-section p {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.mt-section {
+    margin-top: 2rem;
+}
+
+.access-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.step {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    border-left: 3px solid var(--gold-accent);
+    border-radius: 4px;
+}
+
+.step h4 {
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.step p {
+    color: var(--text-light);
+    margin: 0;
+}
+
+.safety-info {
+    background: rgba(212, 175, 55, 0.1);
+    border: 2px solid var(--gold-accent);
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin: 1.5rem 0;
+}
+
+.safety-info p {
+    color: var(--text-light);
+    margin: 0;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.timeline-item {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    border: 1px solid var(--gold-accent);
+    border-radius: 4px;
+}
+
+.timeline-item h4 {
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.timeline-item p {
+    color: var(--text-light);
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* TIPS SECTION */
+.tips-section {
+    margin: 3rem 0;
+}
+
+.tips-section h2 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.tip {
+    background: linear-gradient(135deg, rgba(75, 74, 74, 0.5), rgba(50, 50, 50, 0.5));
+    border: 2px solid var(--gold-accent);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.tip:hover {
+    transform: translateY(-5px);
+    border-color: var(--secondary-color);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+}
+
+.tip h4 {
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.tip p {
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* FAQ SECTION */
+.faq-section {
+    margin: 3rem 0;
+}
+
+.faq-section h2 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.faq-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.faq-item {
+    background: linear-gradient(135deg, rgba(75, 74, 74, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px solid var(--gold-accent);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.faq-question {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1.25rem;
+    margin: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.faq-question:hover {
+    background: var(--accent-color);
+    color: var(--gold-accent);
+    padding-left: 1.5rem;
+}
+
+.faq-answer {
+    color: var(--text-light);
+    padding: 1.25rem;
+    margin: 0;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* CTA SECTION */
+.cta-section {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(139, 115, 85, 0.1));
+    border: 2px solid var(--gold-accent);
+    border-radius: 8px;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.cta-section h2 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background: var(--gold-accent);
+    color: var(--text-dark);
+    border-color: var(--gold-accent);
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--gold-accent);
+    border-color: var(--gold-accent);
+}
+
+.btn-secondary:hover {
+    background: var(--gold-accent);
+    color: var(--text-dark);
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .method-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .method-header h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .method-difficulty {
+        align-self: flex-start;
+    }
+
+    .access-steps,
+    .timeline,
+    .tips-grid,
+    .requirements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .faq-question {
+        font-size: 0.95rem;
+    }
+
+    .after-section,
+    .intro-section {
+        padding: 1.5rem;
+    }
+}
